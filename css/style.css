@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700,900|Playfair+Display');
 
 body{
-	font: 400 17px/1.6 "Nunito Sans", sans-serif;
-	color: #898F9F;
+	font: 400 17px/1.7 "Nunito Sans", sans-serif;
+	color: #8990a0;
+	background: #fff;
 }
 
 /* Layout */
@@ -13,12 +14,7 @@ body{
 	margin: 0 auto;
 }
 
-.ba-header-container {
-	padding-left: 15px;
-	padding-right: 15px;
-	max-width: 1375px;
-	margin: 0 auto;
-}
+
 
 /* Typography */
 p {
@@ -72,6 +68,222 @@ select:focus {
 }
 
 .ba-title {
+	color: #2F2F2F;
+	font: 400 60px/1.3 "Playfair Display", serif;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	letter-spacing: .01em;
+}
+
+.ba-subtitle {
+	color: #393939;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1;
+	text-transform: uppercase;
+}
+
+
+.ba-intro {
+	padding-top: 50px;
+	position: relative;
+	padding-bottom: 500px;
+	color: #dbdbdb;
+}
+
+.ba-intro:before {
+	content: "";
+	background: url("../img/paint.png") no-repeat;
+	position: absolute;
+	width: 564px;
+	height: 860px;
+	z-index: -1;
+	left: -305px;
+	top: -13px;
+}
+
+.ba-intro__header {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 234px;
+}
+
+.ba-menu-link {
+	display: block;
+}
+
+.ba-line {
+	display: block;
+	border-bottom: 3px solid #2F2F2F;
+	width: 31px;
+	padding-bottom: 7px;
+	text-align: right;
+	margin: 0;
+
+}
+
+.ba-short-line{
+	width: 18px;
+	transform: translateX(12px);
+}
+
+.ba-mid-line {
+	width: 25px;
+	transform: translateX(6px);
+}
+
+/*intro info*/
+
+.ba-intro__info {
+	padding-left: 208px;
+}
+
+.ba-text-light {
+	font-size: 40px;
+	margin-bottom: 0;
+	line-height: 1.5;
+	padding-left: 4px;
+}
+
+.ba-text-strong {
+	color: #F41F20;
+	font-size: 100px;
+	font-weight: 900;
+	letter-spacing: -.02em;
+	line-height: 0.8;
+	margin-bottom: 32px;
+	border-right: 10px solid #000;
+	padding-right: 18px;
+	display: inline-block;
+}
+
+.ba-text-medium {
+	font-size: 70px;
+	font-weight: 300;
+	letter-spacing: -.02em;
+	line-height: 1.1;
+	padding-left: 4px;
+}
+
+.ba-no-opacity {
+	color: #2F2F2F;
+}
+
+.ba-scroll {
+	position: absolute;
+	bottom: 151px;
+	left: 50%;
+	border: 2px solid #F2F2F2;
+	border-radius: 50%;
+	padding: 12px 18px;
+}
+
+/*PRODUCT*/
+.ba-product {
+	padding-bottom: 240px;
+}
+
+.ba-product__title-contain {
+	padding-top: 32px;
+	padding-left: 12px;
+}
+
+.ba-subtitle--product {
+	letter-spacing: .14em;
+	padding-left: 48px;
+}
+
+.ba-product__article {
+	padding-top: 14px;
+	padding-left: 58px;
+	padding-right: 10px;
+}
+
+.ba-product__img {
+	box-shadow: 60px 60px #2F2F2F;
+	margin-left: 108px;
+}
+
+/*IDEAS*/
+.ba-description {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.4;
+	margin-top: 16px;
+	margin-bottom: 64px;
+	padding-left: 210px;
+}
+
+.ba-ideas__text-left {
+	padding-left: 96px;
+	padding-bottom: 57px;
+}
+
+.ba-button--ideas {
+	margin-left: 96px;
+}
+
+.ba-ideas__text-right {
+	padding-right: 291px;
+	position: relative;
+}
+
+.ba-ideas__text-right:after {
+	content: "";
+	background: url("../img/paint2.png") no-repeat;
+	position: absolute;
+	width: 564px;
+	height: 729px;
+	z-index: -1;
+	top: -70px;
+	right: -150px;
+}
+
+.ba-strong-reverse {
+	font: 400 60px/1 "Playfair Display", serif;
+	color: #2F2F2F;
+	display: inline-block;
+	transform: rotate(270deg);
+	position: absolute;
+	top: 210px;
+	right: -20px;
+}
+
+.ba-light-reverse {
+	color: #F41F20;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	background: #fff;
+	display: inline-block;
+	transform: rotate(270deg);
+	position: absolute;
+	top: 230px;
+	right: 17px;
+	padding: 0 10px;
+}
+
+.ba-row {
+	display: flex;
+	padding-top: 27px;
+}
+
+
+.ba-col-1-2 {
+	width: 50%;
+}
+
+.ba-col-44 {
+	width: 44%;
+}
+
+.ba-col-56 {
+	width: 56%;
+}
+
+/*
+
+.ba-title {
 	color: #000;
 	font: 400 60px/1.3 "Playfair Display", serif;
 	margin-bottom: 10px;
@@ -85,7 +297,7 @@ select:focus {
 	text-transform: uppercase;
 }
 
-/*header*/
+/*header
 
 .ba-header {
 	padding-top: 65px;
@@ -181,7 +393,7 @@ select:focus {
 	left: 48%;
 }
 
-/*product*/
+/*product*
 
 .ba-product-section {
 	padding-bottom: 280px;
@@ -202,7 +414,7 @@ select:focus {
 	box-shadow: 60px 60px #2F2F2F;
 }
 
-/*ideas*/
+/*ideas*
 
 .ba-description {
 	font-size: 14px;
